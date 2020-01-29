@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:xlo/blocs/drawer_bloc.dart';
 import 'package:xlo/screens/base/base_screen.dart';
-import 'package:xlo/screens/home/home_screen.dart';
 
 void main() => runApp(MyApp());
 
