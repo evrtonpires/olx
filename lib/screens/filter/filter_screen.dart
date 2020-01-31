@@ -3,6 +3,7 @@ import 'package:xlo/models/filter.dart';
 import 'package:xlo/screens/filter/widgets/order_by_filter.dart';
 import 'package:xlo/screens/filter/widgets/price_range_field.dart';
 import 'package:xlo/screens/filter/widgets/section_title.dart';
+import 'package:xlo/screens/filter/widgets/vendor_type_field.dart';
 
 class FilterScreen extends StatefulWidget {
   @override
@@ -31,6 +32,9 @@ class _FilterScreenState extends State<FilterScreen> {
                 const Center(child: SectionTitle(title: "Preço (R\$)")),
                 PriceRangeField(),
                 const Center(child: SectionTitle(title: "Tipo de Anunciante")),
+                VendorTypeField(
+                  initialValue: VENDOR_TYPE_PARTICULAR | VENDOR_TYPE_PROFISSIONAL,
+                  onSaved: (valor) {},)
               ],
             ),
           )
